@@ -1,0 +1,23 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["start", "https://cat-fact.herokuapp.com/facts/random"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "sample", "https://cat-fact.herokuapp.com/facts/random"],
+      "port": 9229
+    }
+  ]
+}

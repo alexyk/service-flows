@@ -1,0 +1,40 @@
+{
+  "name": "service-flows",
+  "version": "0.0.1",
+  "description": "Service test-flows",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node -r esm src/index.js",
+    "dev": "nodemon -r esm --inspect-brk --inspect=0.0.0.0:9229 src/index.js",
+    "start-babel": "nodemon --exec babel-node  --inspect-brk --inspect=0.0.0.0:9229 src/index-babel.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexyk/service-flows.git"
+  },
+  "author": "Alex K",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexyk/service-flows/issues"
+  },
+  "homepage": "https://github.com/alexyk/service-flows#readme",
+  "dependencies": {
+    "axios": "0.19.0",
+    "dotenv": "8.1.0",
+    "esm": "3.2.25",
+    "js-tools": "github:alexyk/js-tools#v0.1.2-es5",
+    "moment": "2.24.0",
+    "node-fetch": "2.6.0",
+    "test-flows": "github:alexyk/test-flows#nodejs"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.6.0",
+    "@babel/core": "7.6.0",
+    "@babel/node": "7.6.1",
+    "@babel/preset-env": "7.6.0",
+    "babel-preset-env": "1.7.0",
+    "babel-register": "6.26.0",
+    "nodemon": "1.19.2"
+  }
+}
